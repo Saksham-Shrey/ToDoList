@@ -11,12 +11,9 @@ app.get("/",function(req,res){
     var today = new Date()
     var currentDay = today.getDay()
     var day = ""
-
-    if(currentDay === 6 || currentDay === 0)
-       day = "Weekend"
-    else
-        day = "Weekday"
-
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    day = dayNames[currentDay]
+   
         res.render('list',{kindOfDay: day})
 })
 
