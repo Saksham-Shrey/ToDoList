@@ -10,10 +10,17 @@ app.get("/",function(req,res){
 
     var today = new Date()
     var currentDay = today.getDay()
-    var day = ""
-    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    day = dayNames[currentDay]
    
+    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+   
+    var options = {
+        weekday : "long",
+        day : "numeric",
+        month : "long"
+    }
+
+    var day = today.toLocaleDateString("en-US",options)
         res.render('list',{kindOfDay: day})
 })
 
