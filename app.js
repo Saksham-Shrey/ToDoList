@@ -24,7 +24,6 @@ app.get("/",function(req,res){
         res.render('list',{kindOfDay: day})
 })
 
-
 app.listen("3000",function(req,res){
     console.log("Server up and running on port 3000")
 })
