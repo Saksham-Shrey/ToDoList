@@ -1,7 +1,8 @@
-# ToDoList
-A ToDoList Web-App.
-<h3> Features: </h3>
-<ul>
-  <li>Creates a user account and stores their data</li>
-  <li>Can be saved and continued anytime and from any device</li>
-</ul>
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
