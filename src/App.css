@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+input {
+  width: 260px;
+  padding: 8px;
+  border-bottom: 2px solid;
+  outline: none;
+  border-radius: 20px 20px 20px 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ button{
+  padding: 12px;
+  background-color: rgb(2, 194, 153);
+  color: black;
+  cursor: pointer;
+  border-radius: 40px 40px 40px 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#empty{
+  color: rgb(205, 107, 2);
+  text-shadow: 0px 1.2px 1.2px black;
+  
 }
 
-.card {
-  padding: 2em;
+.task{
+  display: flex;
+  align-items: center;
+  width: 320px;
+  justify-content: space-between;
+  background-color: rgba(80, 80, 80, 0.26);
+  color: black;
+  height: 32px;
+  padding: 2px 4px 2px 4px;
+  margin-top: 2px;
+  border-radius: 40px 40px 40px 40px;
 }
 
-.read-the-docs {
-  color: #888;
+.checkbox{
+  display: flex;
+  align-items: center;
+}
+
+.checkbox .icon{
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.task div span{
+  margin: 0px 5px 0px 4px;
+}
+
+.task div .icon{
+  cursor: pointer;
+}
+
+.icon2{
+  color: rgb(173, 244, 172);
+}
+
+.icon{
+  color: rgb(225, 3, 3);
 }
