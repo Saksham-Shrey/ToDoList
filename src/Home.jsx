@@ -7,11 +7,18 @@ import {BsFillTrashFill} from "react-icons/bs";
 
 function Home() {
   const [todos, setTodos] = useState([])
+
+
   useEffect(() => {
     axios.get('http://localhost:3000/get')
     .then(result => setTodos(result.data))
     .catch(err => console.log(err))
   },[])
+
+const handleEdit = () => {
+
+}
+
   return (
     <div>
         <h2>ToDo List</h2>
@@ -24,7 +31,7 @@ function Home() {
             :
             todos.map(todo => (
                 <div className = 'task'>
-                  <div className = 'checkbox'>
+                  <div className = 'checkbox' onClick={handleEdit}>
                   <BsCircleFill className='icon2'/>
                     <p>{todo.task}</p>
                 </div>
